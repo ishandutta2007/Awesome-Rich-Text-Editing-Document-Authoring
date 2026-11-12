@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1145" />
+    </linearGradient>
+
+    <!-- Card Glass Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Brand Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Glowing Orbs Gradients -->
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <style>
+      .glow-orb-1 {
+        animation: floatOrb1 10s ease-in-out infinite alternate;
+      }
+      .glow-orb-2 {
+        animation: floatOrb2 12s ease-in-out infinite alternate;
+      }
+      .typing-cursor {
+        animation: blinkCursor 1s step-end infinite;
+      }
+      .pulse-chip {
+        animation: pulseSoft 3s ease-in-out infinite;
+      }
+      .live-cursor {
+        animation: moveCursor 6s ease-in-out infinite alternate;
+      }
+
+      @keyframes floatOrb1 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        100% { transform: translate(60px, 30px) scale(1.15); }
+      }
+      @keyframes floatOrb2 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        100% { transform: translate(-50px, -20px) scale(1.2); }
+      }
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes pulseSoft {
+        0%, 100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.03); opacity: 1; }
+      }
+      @keyframes moveCursor {
+        0% { transform: translate(0, 0); }
+        35% { transform: translate(75px, 35px); }
+        70% { transform: translate(30px, 70px); }
+        100% { transform: translate(110px, 20px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Mesh Orbs (in deep background) -->
+  <circle cx="200" cy="80" r="220" fill="url(#orb1)" class="glow-orb-1" />
+  <circle cx="1020" cy="280" r="260" fill="url(#orb2)" class="glow-orb-2" />
+  <circle cx="900" cy="70" r="180" fill="url(#orb3)" class="glow-orb-1" />
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="360" fill="url(#grid)" />
+
+  <!-- Foreground Main Content Container -->
+  <!-- Header Badges / Breadcrumb -->
+  <g transform="translate(100, 52)">
+    <rect x="0" y="0" width="165" height="30" rx="15" fill="rgba(99, 102, 241, 0.18)" stroke="rgba(129, 140, 248, 0.45)" stroke-width="1.2" />
+    <circle cx="16" cy="15" r="4" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="30" y="19" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="0.5">CURATED ECOSYSTEM</text>
+
+    <rect x="178" y="0" width="185" height="30" rx="15" fill="rgba(16, 185, 129, 0.16)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.2" />
+    <text x="194" y="19" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="0.4">✦ OPEN-SOURCE &amp; SAAS</text>
+  </g>
+
+  <!-- Primary Foreground Title -->
+  <g transform="translate(100, 130)">
+    <text x="0" y="0" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">
+      Awesome Rich Text Editing &amp;
+    </text>
+    <text x="0" y="48" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">
+      Document Authoring
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(100, 218)">
+    <text x="0" y="0" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">
+      Enterprise SaaS platforms, collaborative block engines, local-first office suites &amp; WYSIWYG frameworks.
+    </text>
+    <text x="0" y="24" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400">
+      Real-time CRDT/OT co-authoring • Sovereign self-hosted suites • Clean block-based canvases
+    </text>
+  </g>
+
+  <!-- Key Technology Pill Indicators in Foreground -->
+  <g transform="translate(100, 276)">
+    <!-- Pill 1: BlockNote / ProseMirror -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="130" height="34" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="14" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">📝 ProseMirror</text>
+    </g>
+
+    <!-- Pill 2: CRDT & Yjs -->
+    <g transform="translate(142, 0)">
+      <rect x="0" y="0" width="140" height="34" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="14" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">⚡ Yjs &amp; CRDTs</text>
+    </g>
+
+    <!-- Pill 3: Self-Hosted -->
+    <g transform="translate(294, 0)">
+      <rect x="0" y="0" width="135" height="34" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="14" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">🛡️ Self-Hosted</text>
+    </g>
+
+    <!-- Pill 4: Real-time Co-Edit -->
+    <g transform="translate(441, 0)">
+      <rect x="0" y="0" width="150" height="34" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="14" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">👥 Co-Authoring</text>
+    </g>
+  </g>
+
+  <!-- Right Decorative Document Canvas (Floating Editor Mockup) -->
+  <g transform="translate(850, 48)">
+    <!-- Document Card -->
+    <rect x="0" y="0" width="280" height="264" rx="14" fill="#0b1120" stroke="rgba(148, 163, 184, 0.22)" stroke-width="1.5" />
+    <rect x="0" y="0" width="280" height="38" rx="14" fill="rgba(255, 255, 255, 0.04)" />
+
+    <!-- Window Dots -->
+    <circle cx="20" cy="19" r="5" fill="#ef4444" opacity="0.8" />
+    <circle cx="36" cy="19" r="5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="52" cy="19" r="5" fill="#10b981" opacity="0.8" />
+    <text x="74" y="23" fill="#64748b" font-family="monospace" font-size="11">document.md</text>
+
+    <!-- Editor Mock Lines -->
+    <rect x="22" y="58" width="120" height="12" rx="4" fill="#818cf8" opacity="0.9" />
+    <rect x="22" y="82" width="236" height="8" rx="3" fill="#334155" />
+    <rect x="22" y="98" width="190" height="8" rx="3" fill="#334155" />
+    <rect x="22" y="114" width="210" height="8" rx="3" fill="#334155" />
+
+    <!-- Interactive Sub-block / Callout box -->
+    <rect x="22" y="136" width="236" height="42" rx="6" fill="rgba(99, 102, 241, 0.12)" stroke="rgba(99, 102, 241, 0.3)" stroke-width="1" />
+    <rect x="34" y="147" width="140" height="8" rx="3" fill="#a5b4fc" />
+    <rect x="34" y="161" width="90" height="6" rx="2" fill="#6366f1" />
+
+    <!-- List Items -->
+    <circle cx="28" cy="197" r="3" fill="#38bdf8" />
+    <rect x="38" y="193" width="130" height="7" rx="3" fill="#475569" />
+
+    <circle cx="28" cy="217" r="3" fill="#38bdf8" />
+    <rect x="38" y="213" width="165" height="7" rx="3" fill="#475569" />
+
+    <!-- Collaborative Live Cursor Animation -->
+    <g class="live-cursor" transform="translate(100, 100)">
+      <!-- SVG Cursor Pointer -->
+      <path d="M 0 0 L 14 11 L 8 12 L 12 19 L 9 20 L 5 13 L 0 17 Z" fill="#ec4899" />
+      <rect x="12" y="14" width="56" height="18" rx="4" fill="#ec4899" />
+      <text x="17" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="9" font-weight="700">Alice</text>
+    </g>
+
+    <!-- Typing cursor on header -->
+    <rect x="146" y="56" width="2" height="15" fill="#38bdf8" class="typing-cursor" />
+  </g>
+</svg>
