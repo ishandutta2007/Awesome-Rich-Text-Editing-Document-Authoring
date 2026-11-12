@@ -4,10 +4,12 @@
 
 # 📝 Awesome Rich Text Editing & Document Authoring 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Rich-Text-Editing-Document-Authoring/pulls)
 [![Follow on GitHub](https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=social)](https://github.com/ishandutta2007)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <p align="center">
   <strong>A curated collection of industry-leading Rich Text Editors (WYSIWYG), collaborative document authoring suites, block-based canvases, and local-first knowledge engines.</strong>
@@ -46,6 +48,8 @@ The global market for office productivity and cloud collaboration software is va
   - [⭐ Open-Source Ecosystem Ranked by Popularity](#-open-source-ecosystem-ranked-by-popularity)
   - [🛠️ Detailed Open-Source Project Profiles](#️-detailed-open-source-project-profiles)
 - [📊 Feature Matrix & Comparison at a Glance](#-feature-matrix--comparison-at-a-glance)
+- [⭐ Star History](#star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -209,6 +213,24 @@ Contributions are warmly encouraged! 🎉 If you know of an outstanding open-sou
 3. **Ensure Active Maintenance:** The project must have active maintenance or releases within the last 12 months.
 4. **Follow Formatting Standards:** Include the project's name, GitHub star social badge, tech stack, license, and a concise 1–2 sentence description.
 5. **Open a Pull Request** 🚀
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and supporting **Awesome Rich Text Editing & Document Authoring**! 🙌
+
+If this repository helped you discover new editors, compare document architectures, or build better collaborative experiences, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your fellow engineers, writers, and product teams.
+- ☕ **Buy me a coffee / Sponsor the project:** Your generous support directly helps maintain and curate open-source resources. Check out my **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+##  Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Rich-Text-Editing-Document-Authoring&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Rich-Text-Editing-Document-Authoring&type=date&legend=top-left)
 
 ---
 
